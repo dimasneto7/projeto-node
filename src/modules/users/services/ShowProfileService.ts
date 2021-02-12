@@ -24,7 +24,6 @@ class ShowPofileService {
         }
 
         return user;
-
     }
 }
 
