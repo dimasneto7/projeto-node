@@ -19,9 +19,10 @@ class DiskStorageProvider implements IStorageProvider {
         try {
             await fs.promises.stat(filePath);
         } catch {
-            // eslint-disable-next-line no-useless-return
             return;
         }
+
+        await fs.promises.unlink(filePath);
     }
 }
 
