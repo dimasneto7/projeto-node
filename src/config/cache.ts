@@ -1,4 +1,3 @@
-import { EnvironmentCredentials } from 'aws-sdk';
 import { RedisOptions } from 'ioredis';
 
 interface ICacheConfig {
