@@ -24,7 +24,7 @@ class ListProviderService {
         let users = await this.cacheProvider.recover<User[]>(
             `providers-list:${user_id}`,
         );
-
+        
         if (!users) {
             users = await this.usersRepository.findAllProviders({
                 except_user_id: user_id,
