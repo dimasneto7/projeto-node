@@ -57,7 +57,7 @@ jobs:
             cd ~/app/projeto-node
             ./node_modules/.bin/typeorm migration:run
             
-      - name: Run migrations on Digital Ocean
+      - name: Run migrations on Digital Oc
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
