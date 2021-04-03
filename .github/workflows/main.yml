@@ -35,7 +35,7 @@ jobs:
           source: ".,!node_modules"
           target: "~/app/projeto-node"
           
-      - name: Run production scripts
+      - name: Run production script
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
